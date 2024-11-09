@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:maliboot_challenge/views/ProduitDetail.dart';
+import 'package:maliboot_challenge/widgets/detail.dart';
 
 import '../models/models.dart';
 
@@ -17,7 +19,8 @@ class Similar extends StatelessWidget {
       child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: ((context, index) => GestureDetector(
-                onTap: (){},
+                onTap: (() => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ProduiDetail(plates[index])))),
                 child: Stack(
                   children: [
                     Card(

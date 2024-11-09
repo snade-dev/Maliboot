@@ -3,6 +3,8 @@ import 'package:maliboot_challenge/views/acceuil.dart';
 import 'package:maliboot_challenge/views/init_view.dart';
 import 'package:maliboot_challenge/views/login.dart';
 import 'package:maliboot_challenge/views/register.dart';
+import 'package:maliboot_challenge/widgets/detail.dart';
+
 void main() {
   runApp(const MyApp());
 }
